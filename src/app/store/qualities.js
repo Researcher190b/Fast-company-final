@@ -57,8 +57,6 @@ export const getQualitiesByIds = (qualitiesIds) => (state) => {
     if (state.qualities.entities) {
         const qualitiesArray = [];
         for (const qualId of qualitiesIds) {
-            // console.log(qualId);
-            // console.log(state.qualities.entities);
             for (const quality of state.qualities.entities) {
                 if (quality._id === qualId) {
                     qualitiesArray.push(quality);
