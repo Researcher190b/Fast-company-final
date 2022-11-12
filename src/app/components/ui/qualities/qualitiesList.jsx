@@ -17,6 +17,7 @@ const QualitiesList = ({ qualities }) => {
     }, []);
 
     if (isLoading) return "Loading...";
+
     return (
         <>
             {qualitiesList.map((qual) => (
